@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "thicccboi";
+  src: url("../public/fonts/thicccboi/THICCCBOI-Regular.woff2");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "thicccboi-medium";
+  src: url("../public/fonts/thicccboi/THICCCBOI-Medium.woff2");
+}
+
+@font-face {
+  font-family: "thicccboi-semibold";
+  src: url("../public/fonts/thicccboi/THICCCBOI-SemiBold.woff2");
+}
+
+@font-face {
+  font-family: "thicccboi-bold";
+  src: url("../public/fonts/thicccboi/THICCCBOI-Bold.woff2");
+}
+
+@font-face {
+  font-family: "thicccboi-extrabold";
+  src: url("../public/fonts/thicccboi/THICCCBOI-ExtraBold.woff2");
+}
+
+:root {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+}
