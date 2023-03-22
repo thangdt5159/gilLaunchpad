@@ -75,13 +75,13 @@ const Header = () => {
             <div className="mb-[50px] text-center md:text-start">
               <button
                 className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 bg-darkBlue hover:bg-[#0016d9] mr-5"
-                onClick={() => window.open("https://token-launchpad.gil.eco/")}
+                onClick={() => window.open("https://forms.gle/SYVyYrCwsHyZjsa7A")}
               >
                 IDO
               </button>
               <button
                 className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 hover:bg-darkBlue"
-                onClick={() => window.open("https://launchpad.gil.eco/")}
+                onClick={() => window.open("https://forms.gle/cLs74Wowy2JYdbeD9")}
               >
                 INO
               </button>
