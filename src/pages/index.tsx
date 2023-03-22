@@ -1,13 +1,12 @@
 import About from "../components/About";
+import Cta from "../components/Cta";
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
-import Partners from "../components/Partners";
 import Projects from "../components/Projects";
 import Section6 from "../components/Section6";
 import Section7 from "../components/Section7";
-import Team from "../components/Team";
 import UpcomingProject from "../components/UpcomingProject";
 
 export default function Home() {
@@ -21,8 +20,7 @@ export default function Home() {
       <About />
       <Section6 />
       <Section7 />
-      <Team />
-      <Partners />
+      <Cta />
       <Footer />
     </main>
   );

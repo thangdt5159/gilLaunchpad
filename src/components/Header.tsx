@@ -1,58 +1,59 @@
+import Image from "next/image";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-const Header = () => {
-  const socials = [
-    {
-      id: 1,
-      icon: "fa-brands fa-facebook",
-      url: "",
-    },
-    {
-      id: 2,
-      icon: "fa-brands fa-twitter",
-      url: "",
-    },
-    {
-      id: 3,
-      icon: "fa-brands fa-tiktok",
-      url: "",
-    },
-    {
-      id: 4,
-      icon: "fa-brands fa-telegram",
-      url: "",
-    },
-    {
-      id: 5,
-      icon: "fa-brands fa-discord",
-      url: "",
-    },
-  ];
+export const socials = [
+  {
+    id: 1,
+    icon: "fa-brands fa-twitter",
+    link: "https://twitter.com/MokuFinance",
+  },
+  {
+    id: 2,
+    icon: "fa-brands fa-discord",
+    link: "https://discord.com/invite/SemS7uXaBT",
+  },
+  {
+    id: 3,
+    icon: "fa-brands fa-medium",
+    link: "https://globalinterlink.medium.com/",
+  },
+  {
+    id: 4,
+    icon: "fa-brands fa-telegram",
+    link: "https://t.me/GlobalInterlinkAnnouncements",
+  },
+  {
+    id: 5,
+    icon: "fa-brands fa-youtube",
+    link: "https://www.youtube.com/@globalinterlink",
+  },
+];
 
+const Header = () => {
   const img = [
     {
       id: 1,
-      image: "/images/header/",
+      image: require("../../public/images/3.jpg"),
     },
     {
       id: 2,
-      image: "/images/header/",
+      image: require("../../public/images/4.jpg"),
     },
     {
       id: 3,
-      image: "/images/header/",
+      image: require("../../public/images/3.jpg"),
     },
     {
       id: 4,
-      image: "/images/header/",
+      image: require("../../public/images/4.jpg"),
     },
   ];
 
   const sliderRef = useRef<any>(null);
 
-  var settings = {
-    dots: true,
+  const settings = {
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -62,27 +63,30 @@ const Header = () => {
 
   return (
     <section>
-      <div className="md:py-[100px]">
-        <div className="md:max-w-[1320px] mx-auto px-[15px] flex justify-between items-center">
-          <div className="w-1/2">
+      <div className="md:py-[100px] pt-[100px] pb-[50px]">
+        <div className="md:max-w-[1320px] mx-auto px-[15px] flex flex-wrap justify-between items-center">
+          <div className="md:w-1/2">
             <h5 className="uppercase text-[1.125rem] mb-[1rem]">
               Elevate your investment with Moku Finance
             </h5>
             <h1 className="text-white text-[4rem] font-700 leading-[1.3] mb-[30px]">
               Blockchain projects are changing the world
             </h1>
-            <div className="mb-[50px]">
-              <button className="md:min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 bg-darkBlue hover:bg-[#0016d9]">
+            <div className="mb-[50px] text-center md:text-start">
+              <button
+                className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 bg-darkBlue hover:bg-[#0016d9] mr-5"
+                onClick={() => window.open("https://token-launchpad.gil.eco/")}
+              >
                 IDO
               </button>
-              <button className="md:min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 hover:bg-darkBlue mx-5">
-                IFO
-              </button>
-              <button className="md:min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 hover:bg-darkBlue">
+              <button
+                className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 hover:bg-darkBlue"
+                onClick={() => window.open("https://launchpad.gil.eco/")}
+              >
                 INO
               </button>
             </div>
-            <div className="md:max-w-[450px] bg-[#16182d] py-[5px] px-5 rounded-[16px]">
+            {/* <div className="md:max-w-[450px] bg-[#16182d] py-[5px] px-5 rounded-[16px]">
               <form className="flex items-center">
                 <input
                   type="text"
@@ -91,17 +95,21 @@ const Header = () => {
                 />
                 <i className="fa-solid fa-magnifying-glass text-[24px] ml-[10px] leading-[1.8]"></i>
               </form>
-            </div>
+            </div> */}
             <div className="mt-[50px]">
               {socials.map((item) => (
-                <i className={`${item.icon} text-[24px] mr-5`} />
+                <i
+                  key={item.id}
+                  className={`${item.icon} text-[24px] mr-5 cursor-pointer`}
+                  onClick={() => window.open(item.link)}
+                />
               ))}
             </div>
           </div>
-          <div className="md:w-1/2 relative">
+          <div className="md:w-1/2 relative w-full mt-[50px]">
             <Slider {...settings} ref={sliderRef}>
               {img.map((item) => (
-                <div className="bg-red-300 md:h-[420px]">{item.image}</div>
+                <Image key={item.id} src={item.image} alt="" />
               ))}
             </Slider>
             <div className="absolute right-[20px] bottom-[40px] flex items-center">

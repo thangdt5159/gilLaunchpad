@@ -28,7 +28,50 @@
   src: url("../public/fonts/thicccboi/THICCCBOI-ExtraBold.woff2");
 }
 
-:root {
-  --bs-gutter-x: 30px;
-  --bs-gutter-y: 0;
+.lauchpad-card {
+  max-width: 350px;
+  background: linear-gradient(
+    151.03deg,
+    rgba(31, 8, 68, 0.8) 15.06%,
+    rgba(79, 42, 138, 0.25) 95.6%
+  );
+  backdrop-filter: blur(12.5px);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 30px 10px rgba(17, 17, 17, 0.3);
+}
+
+/* .dark .lauchpad-card {
+  background: linear-gradient(
+    151.03deg,
+    rgba(31, 8, 68, 0.8) 15.06%,
+    rgba(79, 42, 138, 0.25) 95.6%
+  );
+  box-shadow: 0px 5px 30px 10px rgba(17, 17, 17, 0.3);
+} */
+
+.launchpad-card:hover {
+  transform: translateY(-6px);
+}
+
+/* .launchpad-card .lauchpad-info {
+  background: linear-gradient(
+    159.23deg,
+    #ffffff 12.5%,
+    rgba(255, 255, 255, 0.3) 86.07%
+  );
+  backdrop-filter: blur(12.5px);
+  border-radius: 0px 0px 20px 20px;
+} */
+
+.lauchpad-name {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+}
+
+.lauchpad-info {
+  background: linear-gradient(
+    159.23deg,
+    #1b153e 12.5%,
+    rgba(79, 42, 138, 0.25) 86.07%
+  );
 }
