@@ -31,7 +31,7 @@ const Cta = () => {
           <Image
             src={require("../../public/images/img_cta.png")}
             alt=""
-            className="mt-[50px] md:mt-0 md:absolute right-0 top-[27px] animate-slide md:pb-[60px]"
+            className="mt-[50px] md:mt-[60px] md:absolute right-0 top-[27px] animate-slide md:pb-[60px]"
           />
         </div>
       </div>

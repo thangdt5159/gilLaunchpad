@@ -291,8 +291,8 @@ const Projects = () => {
           <div>
             <Slider {...settings}>
               {allProjectData.map((item) => (
-                <div className="md:w-1/4 md:px-3">
-                  <ProjectCard key={item.id} data={item} />
+                <div key={item.id} className="md:w-1/4 md:px-3">
+                  <ProjectCard data={item} />
                 </div>
               ))}
             </Slider>
