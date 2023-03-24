@@ -25,6 +25,7 @@ const Footer = () => {
                 <li
                   key={item.id}
                   className="py-2 px-[13px] font-700 text-[16px] cursor-pointer"
+                  onClick={() => window.open(item.link)}
                 >
                   {item.title}
                 </li>

@@ -66,22 +66,22 @@ const Header = () => {
       <div className="md:py-[100px] pt-[100px] pb-[50px]">
         <div className="md:max-w-[1320px] mx-auto px-[15px] flex flex-wrap justify-between items-center">
           <div className="md:w-1/2">
-            <h5 className="uppercase text-[1.125rem] mb-[1rem]">
+            <h5 className="uppercase text-[1.125rem] mb-[1rem] text-center md:text-start">
               Elevate your investment with Moku Finance
             </h5>
-            <h1 className="text-white text-[4rem] font-700 leading-[1.3] mb-[30px]">
+            <h1 className="text-white text-[4rem] font-700 leading-[1.3] mb-[30px] text-center mdLtext-start">
               Blockchain projects are changing the world
             </h1>
             <div className="mb-[50px] text-center md:text-start">
               <button
-                className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 bg-darkBlue hover:bg-[#0016d9] mr-5"
-                onClick={() => window.open("https://forms.gle/SYVyYrCwsHyZjsa7A")}
+                className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] rounded-full transition-all duration-300 bg-bgGil mr-5"
+                onClick={() => window.open("https://token-launchpad.gil.eco/")}
               >
                 IDO
               </button>
               <button
-                className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] border border-darkBlue rounded-full transition-all duration-300 hover:bg-darkBlue"
-                onClick={() => window.open("https://forms.gle/cLs74Wowy2JYdbeD9")}
+                className="min-w-[150px] font-600 text-[16px] text-white leading-[1.7] p-[10px] bg-bgGil rounded-full transition-all duration-300"
+                onClick={() => window.open("https://launchpad.gil.eco/")}
               >
                 INO
               </button>
@@ -96,7 +96,7 @@ const Header = () => {
                 <i className="fa-solid fa-magnifying-glass text-[24px] ml-[10px] leading-[1.8]"></i>
               </form>
             </div> */}
-            <div className="mt-[50px]">
+            <div className="mt-[50px] text-center md:text-start">
               {socials.map((item) => (
                 <i
                   key={item.id}

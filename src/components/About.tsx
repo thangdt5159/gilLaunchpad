@@ -25,7 +25,7 @@ const About = () => {
           <div className="text-center flex flex-wrap justify-between items-center">
             {content.map((item) => (
               <div key={item.id} className="md:w-1/2 p-[30px]">
-                <div className="bg-darkBlue w-[100px] h-[100px] rounded-full flex justify-center items-center mx-auto mb-[30px]">
+                <div className="bg-bgGil w-[100px] h-[100px] rounded-full flex justify-center items-center mx-auto mb-[30px]">
                   <i className={`${item.icon} text-[36px] text-white`}></i>
                 </div>
                 <h5 className="uppercase text-[16px] font-700 mb-[10px]">

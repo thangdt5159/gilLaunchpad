@@ -5,26 +5,32 @@ export const menuData = [
   {
     id: 1,
     title: "Home",
+    link: "https://gil.eco",
   },
   {
     id: 2,
     title: "Wallet",
+    link: "https://wallet.gil.eco/",
   },
   {
     id: 3,
     title: "Dex",
+    link: "https://dex.gil.eco/swap",
   },
   {
     id: 4,
     title: "Marketplace",
+    link: "https://marketplace.gil.eco/",
   },
   {
     id: 5,
     title: "Docs",
+    link: "https://gil.eco/pitch-deck",
   },
   {
     id: 6,
     title: "Contact Us",
+    link: "https://gil.eco/contact",
   },
 ];
 
@@ -46,6 +52,7 @@ const Navbar = () => {
                 <li
                   key={item.id}
                   className="py-2 px-[13px] font-700 text-[16px] cursor-pointer"
+                  onClick={() => window.open(item.link)}
                 >
                   {item.title}
                 </li>
@@ -71,6 +78,7 @@ const Navbar = () => {
               <li
                 key={item.id}
                 className="py-2 px-[13px] font-700 text-[16px] cursor-pointer border-b border-white/10"
+                onClick={() => window.open(item.link)}
               >
                 {item.title}
               </li>

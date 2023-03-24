@@ -36,6 +36,7 @@ module.exports = {
         bgGrad:
           "linear-gradient(151.03deg,rgba(31,8,68,.8) 15.06%,rgba(79,42,138,.25) 95.6%)",
         bgGrad2: "linear-gradient(91.82deg,#f727d2 22.38%,#a52cef 108.71%)",
+        bgGil: "linear-gradient(91.82deg, #F727D2 22.38%, #A52CEF 108.71%)",
       },
       backgroundColor: {
         bg: "#090a1a",
@@ -43,6 +44,7 @@ module.exports = {
       },
       textColor: {
         lightGray: "#9ca0d2",
+        bgGil: "linear-gradient(91.82deg, #F727D2 22.38%, #A52CEF 108.71%)",
       },
       borderColor: {
         darkBlue: "#001aff",
