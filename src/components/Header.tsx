@@ -69,7 +69,7 @@ const Header = () => {
             <h5 className="uppercase text-[1.125rem] mb-[1rem] text-center md:text-start">
               Elevate your investment with Moku Finance
             </h5>
-            <h1 className="text-white text-[4rem] font-700 leading-[1.3] mb-[30px] text-center mdLtext-start">
+            <h1 className="text-white text-[4rem] font-700 leading-[1.3] mb-[30px] text-center md:text-start">
               Blockchain projects are changing the world
             </h1>
             <div className="mb-[50px] text-center md:text-start">

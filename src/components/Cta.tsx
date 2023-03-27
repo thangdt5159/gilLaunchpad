@@ -14,7 +14,7 @@ const Cta = () => {
               Full support in project incubation
             </p>
           </div>
-          <div className="text-center md:text-start pb-[60px] md:pl-[100px] flex flex-wrap gap-3 justify-center">
+          <div className="pb-[60px] md:pl-[100px] flex flex-wrap gap-3 justify-center md:justify-start">
             <button
               className="min-w-[180px] font-600 text-[16px] text-white leading-[1.7] p-[10px] rounded-full transition-all duration-300 bg-bgGil"
               onClick={() => window.open("https://forms.gle/SYVyYrCwsHyZjsa7A")}
